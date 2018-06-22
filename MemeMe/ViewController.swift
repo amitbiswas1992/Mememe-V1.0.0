@@ -7,7 +7,7 @@
 //
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
     
     @IBOutlet weak var imagePickerView: UIImageView!
@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     @IBAction func pickAnImage(_ sender: Any) {
         let pickerController = UIImagePickerController()
         present(pickerController, animated: true, completion: nil)
+        //dismiss(animated: true, completion: nil)
 
     }
     
